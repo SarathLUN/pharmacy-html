@@ -23,40 +23,40 @@ open index.html
 ## Pages:
 
 **HOME**
-- index.html
+- [index.html](index.html)
 
 **ABOUT US**
-- about-v.1.html
-- about-v-2.html
-- doctors.html
-  - doctors-details.html
-- faq.html
-- pricing.html
-- comingsoon.html
-- maintenance.html
-- 404.html
+- [about-v.1.html](about-v.1.html)
+- [about-v-2.html](about-v-2.html)
+- [doctors.html](doctors.html)
+  - [doctors-details.html](doctors-details.html)
+- [faq.html](faq.html)
+- [pricing.html](pricing.html)
+- [comingsoon.html](comingsoon.html)
+- [maintenance.html](maintenance.html)
+- [404.html](404.html)
 
 **OUR SERVICES**
-- services-v.1.html
-  - services-details.v.1.html
-- services-v.2.html
-  - services-details.v.2.html
-- services-v.3.html
-  - services-details.v.3.html
+- [services-v.1.html](services-v.1.html)
+  - [services-details.v.1.html](services-details.v.1.html)
+- [services-v.2.html](services-v.2.html)
+  - [services-details.v.2.html](services-details.v.2.html)
+- [services-v.3.html](services-v.3.html)
+  - [services-details.v.3.html](services-details.v.3.html)
 
 **PORTFOLIO**
-- portfolio-2col.html
-- portfolio-3col.html
+- [portfolio-2col.html](portfolio-2col.html)
+- [portfolio-3col.html](portfolio-3col.html)
 
 **BLOG**
-- blog-list.html
-- blog-grid.html
-- blog-left.html
-- blog-right.html
-- blog-details.html
+- [blog-list.html](blog-list.html)
+- [blog-grid.html](blog-grid.html)
+- [blog-left.html](blog-left.html)
+- [blog-right.html](blog-right.html)
+- [blog-details.html](blog-details.html)
 
 **SHOP**
-- shop-detail.html
+- [shop-detail.html](shop-detail.html)
 
 **CONTACT US**
-- contact.html
+- [contact.html](contact.html)
