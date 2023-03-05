@@ -1,3 +1,3 @@
 # pharmacy-html
 
-- Official [documentation](https://medics.themechampion.com/html/document/index.html)
+- Official [Website](https://medics.themechampion.com/html/) Templates.
