@@ -5,3 +5,7 @@
 #shopping-cart > .fa-shopping-cart{
     font-size: 30px;
 }
+
+.in-cart-img{
+    max-width: 30px;
+}
