@@ -163,7 +163,7 @@
         <div class="row">
             <div class="col-sm-12">
                 <ul class="list-group">
-                    <li class="list-group-item">Pay on Delivery</li>
+                    <li class="list-group-item"><span class="text-success"><i class="fa fa-check-circle"></i></span> Pay on Delivery</li>
                 </ul>
             </div>
         </div>
@@ -178,7 +178,9 @@
         <div class="row">
             <div class="col-md-6 col-sm-12">
                 <div class="input-group mb-3">
-                    <input type="text" class="form-control" placeholder="Your Location" aria-label="Your location" aria-describedby="location-basic-addon2">
+<!-- https://www.w3schools.com/html/tryit.asp?filename=tryhtml5_geolocation -->
+<!-- https://www.coding.academy/blog/getting-a-users-location-longitude-and-latitude-using-jquery -->
+                    <input type="text" class="form-control" placeholder="Your Location" aria-label="Your location" aria-describedby="location-basic-addon2" id="locationData">
                     <div class="input-group-append">
                         <span class="input-group-text" id="location-basic-addon2"> <i class="icofont-map-pins"></i> </span>
                     </div>
@@ -196,7 +198,7 @@
         <div class="row mt-3">
             <div class="col-sm-12">
                 <button class="btn btn-outline-primary">Submit Order <i class="icofont-telegram"></i> </button>
-                <button class="btn btn-outline-warning">Shop More <i class="icofont-cart"></i> </button>
+                <a href="shop.html" class="btn btn-outline-warning">Shop More <i class="icofont-cart"></i> </a>
             </div>
         </div>
 
@@ -282,6 +284,30 @@
 <script src="assets/js/jquery.ui.js"></script>
 <script src="assets/js/jquery.magnific-popup.min.js"></script>
 <script src="assets/js/main.js"></script>
+
+<!-- script get current GeoLocation -->
+<script>
+    $(document).ready(function() {
+        $("#location-basic-addon2").click(function() {
+            console.log(GeolocationPosition);
+            if (GeolocationPosition) {
+                navigator.geolocation.getCurrentPosition(locationSuccess);
+            } else {
+                $("#locationData").val('Your browser does not support location data retrieval.');
+            }
+        });
+
+        function locationSuccess(position) {
+            console.log(position);
+            var latitude = position.coords.latitude;
+            var longitude = position.coords.longitude;
+            $("#locationData").val("Latitude:" + latitude + "; Longitude:" + longitude);
+
+        // syntax:   https://maps.google.com?q=latitude,longitude
+        // example:   https://maps.google.com?q=11.556305,104.921831
+        }
+    });
+</script>
 </body>
 </html>
 
