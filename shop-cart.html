@@ -276,39 +276,18 @@
 </footer>
 <!--    footer-bottom-area-end-->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<script src="assets/js/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
 <script src="assets/js/popper.js"></script>
 <script src="assets/js/owl.carousel.min.js"></script>
 <script src="assets/js/jquery-circular-progressbar-1.2.2.min.js"></script>
 <script src="assets/js/bootstrap.min.js"></script>
 <script src="assets/js/jquery.ui.js"></script>
 <script src="assets/js/jquery.magnific-popup.min.js"></script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 <script src="assets/js/main.js"></script>
+<script src="assets/js/geolocation.js"></script>
 <script src="assets/js/telegram.js"></script>
 
-<!-- script get current GeoLocation -->
-<script>
-    $(document).ready(function() {
-        $("#location-basic-addon2").click(function() {
-            console.log(GeolocationPosition);
-            if (GeolocationPosition) {
-                navigator.geolocation.getCurrentPosition(locationSuccess);
-            } else {
-                $("#locationData").val('Your browser does not support location data retrieval.');
-            }
-        });
-
-        function locationSuccess(position) {
-            console.log(position);
-            var latitude = position.coords.latitude;
-            var longitude = position.coords.longitude;
-            $("#locationData").val("Latitude:" + latitude + "; Longitude:" + longitude);
-
-        // syntax:   https://maps.google.com?q=latitude,longitude
-        // example:   https://maps.google.com?q=11.556305,104.921831
-        }
-    });
-</script>
 </body>
 </html>
 
